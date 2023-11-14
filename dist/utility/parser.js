@@ -14,7 +14,6 @@ const colorFilterRegExp = /__color-filter-to\(([^;}]*)\)/g;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const replaceColor = function(match, color) {
-    console.log(match, color);
     if(match && color) {
         const parsedColor = _colorParse.default(color.trim());
         const filter = convertColor(parsedColor.values);
@@ -24,8 +23,6 @@ const replaceColor = function(match, color) {
 }
 
 const parser = function(content) {
-    console.log(content);
-
     return content.replace(colorFilterRegExp, replaceColor);
 }
 
@@ -54,8 +51,6 @@ const convertColor = function (values) {
 
             iterations++;
         }
-
-        console.log('Color filter iterations: ' + iterations);
 
         return result.filter.replace('filter:', 'filter: brightness(0) saturate(100%)');
     }
