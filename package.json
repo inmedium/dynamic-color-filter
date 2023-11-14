@@ -1,6 +1,6 @@
 {
   "name": "dynamic-color-filter",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "css loader to generate dynamic color filters",
   "repository": "inmedium/dynamic-color-filter",
   "homepage": "https://github.com/inmedium/dynamic-color-filter",
@@ -19,7 +19,7 @@
   ],
   "author": "Sebastian Harbst",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "parse-css-color": "^0.2.1"
   }
 }
