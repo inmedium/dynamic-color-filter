@@ -9,7 +9,7 @@ const _colorParse = _interopRequireDefault(require("parse-css-color"));
 const _color = _interopRequireDefault(require("./color"));
 const _solver = _interopRequireDefault(require("./solver"));
 
-const colorFilterRegExp = /__color-filter-to\(([^;}]*)\)/g;
+const colorFilterRegExp = /color-filter-to:\W*?\((.*)\);?/g;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
