@@ -1,6 +1,6 @@
 {
   "name": "dynamic-color-filter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "css loader to generate dynamic color filters",
   "repository": "inmedium/dynamic-color-filter",
   "homepage": "https://github.com/inmedium/dynamic-color-filter",
