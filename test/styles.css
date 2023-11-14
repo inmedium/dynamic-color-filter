@@ -1,0 +1,22 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+}
+
+.original {
+    flex: 0 0 50%;
+    background: #164acd;
+}
+
+.filter {
+    flex: 0 0 50%;
+    background: white;
+    __color-filter-to(#164acd)
+}

@@ -1,0 +1,25 @@
+{
+  "name": "dynamic-color-filter",
+  "version": "1.0.0",
+  "description": "css loader to generate dynamic color filters",
+  "repository": "inmedium/dynamic-color-filter",
+  "homepage": "https://github.com/inmedium/dynamic-color-filter",
+  "bugs": "https://github.com/inmedium/dynamic-color-filter/issues",
+  "main": "dist/cjs.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {},
+  "keywords": [
+    "webpack",
+    "css",
+    "loader",
+    "color",
+    "filter"
+  ],
+  "author": "Sebastian Harbst",
+  "license": "MIT",
+  "devDependencies": {
+    "parse-css-color": "^0.2.1"
+  }
+}

@@ -1,0 +1,18 @@
+
+> test@1.0.0 build:prod
+> webpack --mode production
+
+body{
+    color: red;
+    __color-filter-to(#946ab6)
+}
+__color-filter-to(#946ab6) #946ab6
+Color filter iterations: 25
+asset main.css 154 bytes [emitted] (name: main)
+asset main.js 0 bytes [compared for emit] [minimized] (name: main)
+Entrypoint main 154 bytes = main.css 154 bytes main.js 0 bytes
+orphan modules 2.92 KiB (javascript) 937 bytes (runtime) [orphan] 8 modules
+cacheable modules 22 bytes (javascript) 153 bytes (css/mini-extract)
+  ./source.js 22 bytes [built] [code generated]
+  css ./node_modules/css-loader/dist/cjs.js!../dist/cjs.js!./styles.css 153 bytes [built] [code generated]
+webpack 5.89.0 compiled successfully in 391 ms

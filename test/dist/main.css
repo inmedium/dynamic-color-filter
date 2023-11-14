@@ -1,0 +1,25 @@
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!../dist/cjs.js!./styles.css ***!
+  \*****************************************************************************/
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+}
+
+.original {
+    flex: 0 0 50%;
+    background: #164acd;
+}
+
+.filter {
+    flex: 0 0 50%;
+    background: white;
+    filter: brightness(0) saturate(100%) invert(23%) sepia(78%) saturate(2272%) hue-rotate(215deg) brightness(88%) contrast(105%);
+}
