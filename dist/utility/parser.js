@@ -9,15 +9,17 @@ const _colorParse = _interopRequireDefault(require("parse-css-color"));
 const _color = _interopRequireDefault(require("./color"));
 const _solver = _interopRequireDefault(require("./solver"));
 
-const colorFilterRegExp = /color-filter-to:\W*?\((.*)\);?/g;
+const colorFilterRegExp = /color-filter-to:\W*?([^;]*);?/g;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const replaceColor = function(match, color) {
     if(match && color) {
         const parsedColor = _colorParse.default(color.trim());
-        const filter = convertColor(parsedColor.values);
-        return filter;
+        if(parsedColor) {
+            const filter = convertColor(parsedColor.values);
+            return filter;
+        }
     }
     return '';
 }
